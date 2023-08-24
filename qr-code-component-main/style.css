@@ -22,12 +22,16 @@ a {
 
 .card {
     width: 22%;
-    height: 55%;
+    /* height: calc(55% - 0.2em); */
     align-self: center;
     background-color: hsl(0, 0%, 100%);
     border-radius: 3%;
     padding: 1em;
     box-shadow: 0.1em 0.1em 1em 0.3em hsl(220, 15%, 55%, 25%);
+}
+
+img {
+    max-width: 100%;
 }
 
 .qr-img {
@@ -58,4 +62,26 @@ h3 {
 
 .attribution p {
     padding: 0.3em 0 0.3em 0;
+}
+
+/* RESPONSIVE */
+
+/* 
+Mobile: 375px
+Desktop: 1440px
+*/
+
+@media (min-width: 1440px) {
+    h1 {
+        font-size: 1.6em;
+        padding: 1.2em 0.2em 0.2em 0.2em;
+    }
+    h3 {
+        font-size: 1.3em;
+        padding: 0.4em 0.2em 1em 0.2em;
+    }
+    .card {
+        width: 25em;
+        height: 40em;
+    }
 }
